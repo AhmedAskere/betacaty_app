@@ -18,34 +18,29 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.cyan[700],
         body: SafeArea(
           child: Column(
-            // mainAxisSize: MainAxisSize.min,
-            //verticalDirection: VerticalDirection.down,
-            // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            crossAxisAlignment: CrossAxisAlignment.stretch,
+            // ignore: prefer_const_literals_to_create_immutables
             children: [
-              Container(
-                child: Text('Container 1'),
-                color: Colors.white,
-                height: 100.0,
+              CircleAvatar(
+                radius: 50.0,
+                backgroundImage: AssetImage('images/22.jpg'),
               ),
-              SizedBox(
-                height: 30.0,
+              Text(
+                'احمد العسكر',
+                style: TextStyle(
+                  fontFamily: 'IBMPlexSansArabic',
+                  fontSize: 30.0,
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
+                ),
               ),
-              Container(
-                child: Text('Container 2'),
-                color: Colors.blue,
-                height: 100.0,
-              ),
-              SizedBox(
-                height: 30.0,
-              ),
-              Container(
-                child: Text('Container 3'),
-                color: Colors.green,
-                height: 100.0,
-              ),
-              Container(
-                width: double.infinity,
+              Text(
+                'احمد العسكر',
+                style: TextStyle(
+                  fontFamily: 'IBMPlexSansArabic',
+                  fontSize: 30.0,
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
+                ),
               ),
             ],
           ),
