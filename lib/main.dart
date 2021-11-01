@@ -18,6 +18,7 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.cyan[700],
         body: SafeArea(
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             // ignore: prefer_const_literals_to_create_immutables
             children: [
               CircleAvatar(
@@ -42,76 +43,68 @@ class MyApp extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              Container(
-                margin: EdgeInsets.only(top: 50, left: 20, right: 20),
-                padding: EdgeInsets.all(5.0),
-                color: Colors.white,
-                child: Row(
-                  // ignore: prefer_const_literals_to_create_immutables
-                  children: [
-                    Icon(
-                      Icons.phone,
-                      size: 40.0,
-                      color: Colors.cyan[700],
-                    ),
-                    SizedBox(
-                      width: 20.0,
-                    ),
-                    Text(
-                      '(+964) 781 364 6675',
-                      style: TextStyle(
-                        color: Colors.black,
-                        fontSize: 20.0,
-                        fontFamily: 'IBMPlexSansArabic',
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                  ],
+              SizedBox(
+                width: 300,
+                height: 20.0,
+                child: Divider(
+                  color: Colors.cyan[100],
                 ),
               ),
-              Container(
-                margin: EdgeInsets.only(top: 20, left: 20, right: 20),
-                padding: EdgeInsets.all(5.0),
+              Card(
+                margin: EdgeInsets.only(top: 50, left: 20, right: 20),
                 color: Colors.white,
-                child: Row(
-                  // ignore: prefer_const_literals_to_create_immutables
-                  children: [
-                    Icon(
+                child: ListTile(
+                  leading: Icon(
+                    Icons.phone,
+                    size: 40.0,
+                    color: Colors.cyan[700],
+                  ),
+                  title: Text(
+                    '(+964) 781 364 6675',
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 20.0,
+                      fontFamily: 'IBMPlexSansArabic',
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
+              ),
+              Card(
+                margin: EdgeInsets.only(top: 20, left: 20, right: 20),
+                color: Colors.white,
+                child: Padding(
+                  padding: const EdgeInsets.all(5.0),
+                  child: ListTile(
+                    leading: Icon(
                       Icons.email,
                       size: 40.0,
                       color: Colors.cyan[700],
                     ),
-                    SizedBox(
-                      width: 20.0,
-                    ),
-                    Text(
+                    title: Text(
                       'ahmed.al.shmary.6675@gmail.com',
                       style: TextStyle(
                         color: Colors.black,
-                        fontSize: 17.0,
+                        fontSize: 16.0,
                         fontFamily: 'IBMPlexSansArabic',
                         fontWeight: FontWeight.bold,
                       ),
                     ),
-                  ],
+                  ),
                 ),
               ),
-              Container(
+              Card(
                 margin: EdgeInsets.only(top: 20, left: 20, right: 20),
-                padding: EdgeInsets.all(5.0),
                 color: Colors.white,
-                child: Row(
-                  // ignore: prefer_const_literals_to_create_immutables
-                  children: [
-                    Icon(
+                child: Padding(
+                  padding: const EdgeInsets.all(5.0),
+                  child: ListTile(
+                    leading: Icon(
                       Icons.message,
                       size: 40.0,
                       color: Colors.cyan[700],
                     ),
-                    SizedBox(
-                      width: 20.0,
-                    ),
-                    Text(
+                    title: Text(
                       'Telegram : A_prog',
                       style: TextStyle(
                         color: Colors.black,
@@ -120,7 +113,7 @@ class MyApp extends StatelessWidget {
                         fontWeight: FontWeight.bold,
                       ),
                     ),
-                  ],
+                  ),
                 ),
               ),
             ],
